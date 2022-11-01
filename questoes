@@ -1,0 +1,145 @@
+Q1
+
+Implemente a função ao lado que retorna o dobro do valor da soma entre dois valores passados como parâmetros.
+Exemplo:
+
+Se os parâmetros de entrada forem:
+
+a=2
+b=3
+
+O retorno será:
+10
+pois a soma vale 5 e o dobro da soma vale 10
+
+Q2
+
+Implemente a função ao lado que recebe uma string como parâmetro. A função deve retornar a string recebida repetida três vezes sem espaço entre as repetições.
+
+Exemplo:
+
+Se *palavra = “limão”* então a função deve retornar “limãolimãolimão"
+
+Q4
+
+Média Ponderada
+Implemente a função ao lado que recebe como parâmetros 4 números (2 valores e 2 pesos) e retorna o valor da média ponderada entre os valores.
+
+Para se calcular a média ponderada entre dois números, por exemplo 5 e 10, com os respectivos pesos de ponderação 2 e 3 devemos: multiplicar os números pelos pesos, ou seja, calcular 5*2=10 e 10*3=30; depois devemos somar as quantidades obtidas, ou seja 10+30=40; por fim, dividimos o número obtido pela soma dos pesos, ou seja, a soma dos pesos aqui vale 2+3=5 logo 40/5=8. O último valor obtido é a média ponderada que, nesse caso, vale 8.
+
+Exemplo: se passarmos como argumento valor1=5, peso1=2, nota2=10, peso2=3, a função deve retornar o número 8.
+
+Q5
+
+Implemente a função ao lado que recebe um valor como parâmetro e retorna um array contendo os elementos de 1 até o valor passado como parâmetro.
+
+Exemplo:
+
+Se for passado como parâmetro n = 5, sua função deve retornar [1, 2, 3, 4, 5]
+Se for passado como parâmetro n =10, sua função deve retornar [1, 2, 3, 4, 5, 6, 7, 8 ,9, 10]
+
+Observação:
+Sempre será passado como parâmetro um valor maior ou igual a 1
+
+Dica:
+Para adicionar um elemento a um array você pode utilizar o comando “.push”. Então caso tenha um array “arr=[]” e queira inserir o número “3” nesse array basta fazer “arr.push(3)”.
+
+Q6
+
+Implemente a função ao lado que recebe 3 números e retorna a soma dos 2 maiores
+
+Exemplo:
+Se forem passados num1=2, num2=5 e num3=1, a função deve retornar 7, pois num1 e num2 são os 2 maiores valores que somados dão 7.
+
+Observação:
+Todos os valores serão distintos entre si, ou seja, não ocorrerá algo como num1=2, num2=2.
+
+
+Q7
+
+Implemente a função ao lado que recebe como parâmetros 2 números, o valor da parcela e a quantidade de parcelas, e retorna Vou comprar ou Não vou comprar de acordo com a seguinte regra:
+- Valores acima de 1000 e apenas no caso em que se tem 10 ou mais parcelas sempre se compra
+- Valores acima de 500 e com 5 ou mais parcelas, também, sempre se compra
+- Valores menores ou iguais a 500 sempre se compra
+- Qualquer outra situação, nunca se compra
+
+Exemplo: deve retornar "Vou comprar" quando passados preco=1200 e parcelas=10
+
+Exemplo: deve retornar "Vou comprar" quando passados preco=700 e parcelas=6
+
+Exemplo: deve retornar "Vou comprar" quando passados preco=400 e parcelas=3
+
+Exemplo: deve retornar "Não vou comprar" quando passados preco=1200 e parcelas=6
+
+Q8
+soma dos impares
+
+Implemente a função ao lado que recebe um array e retorna a soma de todos os valores ímpares do array.
+Exemplo:
+Se for passado o array [3,6,8,9], a função deve retornar 12, pois apenas os valores 3 e 9 são ímpares e sua soma retorna 12.
+
+Observação:
+Todos os arrays terão pelo menos um valor ímpar.
+Nos casos em que só houver 1 valor ímpar, a função deve retornar o próprio valor, ou seja, se for passado [1,4,6] a função deve retornar 1.
+
+Q9
+
+É Palíndromo
+Implemente a função ao lado que recebe uma string como parâmetro e retorna a string sim caso a string passada seja um palíndromo ou não caso contrário. Palíndromo é a categoria de strings que são escritas da mesma forma de trás para frente, por exemplo “aba”, “arara” e “abcdcba”.
+
+Dica: Strings se comportam parecido com arrays. Então, podemos obter o número de caracteres de uma string utilizando a propriedade length como se segue:
+
+let palavra = "abcdef";
+let tamanho = palavra.length;//Nesse caso a variável tamanho vai receber o valor 6 que é o número de caracteres em palavra
+
+Outra semelhança é que podemos acessar um caractere da string por sua posição, então se quisermos pegar a primeira letra da string palavra acima podemos fazer:
+
+let primeiraLetra = palavra[0]//Com isso, temos que primeiraLetra recebeu a string “a”;
+let segundaLetra = palavra[1]//Com isso, temos que segundaLetra recebeu a string “b”;
+
+Q10
+Índice do Valor
+Implemente a função ao lado que recebe uma array e um valor e retorna a posição que esse valor se encontra na array (começando em 0).
+
+Exemplo: deve retornar 2 quando passada a array [10, 30, 50, 70, 90] e o valor 50.
+
+Q11
+Yin Yang
+Implemente a função ao lado, que concatena em uma única string todos os números da array fornecida. Porém, com algumas regras:
+- Números múltiplos de 2 devem ser substituídos pela string "Yin"
+- Números múltiplos de 3 devem ser substituídos pela string "Yang"
+- Números múltiplos de 2 e 3 ao mesmo tempo devem ser substituídos pela string "YinYang"
+
+Exemplo: deve retornar "1Yin5YinYang1113Yang" quando passada a array [1,2,5,6,11,13,15]
+
+Q12
+
+É Número Driven
+Um número é chamado “Número Driven” se ele pode ser escrito na forma 3^n - 1 (3 elevado a n menos 1), com n sendo um número natural (1, 2, 3, …). Implemente a função ao lado que recebe um valor como parâmetro e retorna a mensagem “É desse tipo”, caso o número passado seja um Número Driven, ou “Não é desse tipo” caso contrário.
+
+Exemplo: caso o valor seja 8 (3^2 - 1), a função deve retornar "É desse tipo"
+
+Exemplo: caso o número passado seja 80, temos que 80 é a mesma coisa que 3^4-1, logo ele pode ser escrito no formato acima fazendo n=4. Portanto, a função deve retornar “É desse tipo”.
+
+Exemplo: caso o número seja 5, por outro lado, não é um "Número Driven", pois se n for 1, temos que 3^1-1=2 e se n for 2, temos que 3^2-1=8, ou seja, não existe um valor natural de n que faça 3^n-1 chegar em 5. A função deve retornar, então “Não é desse tipo”.
+
+Q13
+
+Torre na Captura
+No xadrez, a torre é uma peça que anda quantas casas ela quiser tanto na horizontal quanto na vertical, como na imagem abaixo. Além disso, uma peça captura outra peça se elas ocuparem a mesma posição no tabuleiro.
+
+Implemente a função ao lado que recebe 2 strings, a posição onde está a sua torre e a posição onde está a peça do adversário e deve retornar “Sim” caso a torre consiga capturar a peça do adversário com apenas 1 movimento ou “Não” caso contrário.
+
+
+
+Exemplo:
+Se for passado posicaoTorre=11 e posicaoAdversario=31, a função deve retornar “Sim”. Nesse caso, a torre pode se deslocar ao longo da coluna 1 e chegar na posição da outra peça.
+
+Se for passado posicaoTorre=11 e posicaoAdversario=14, a função deve retornar “Sim”. Nesse caso, para a torre pode se deslocar ao longo da linha 1 e chegar na posição da outra peça.
+
+Se for passado posicaoTorre=11 e posicaoAdversario=22, a função deve retornar “Não”. Nesse caso, não tem como a torre se deslocar apenas em 1 linha ou em 1 coluna e chegar na posição da outra peça.
+
+Observação:
+a posição das peças será dada no formato “xy” onde x representa a linha em que a peça está e y a coluna que a peça está, ou seja, a posição “12” significa que a peça está na 1a linha e na 2a coluna
+
+
